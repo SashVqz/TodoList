@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notas</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Listas de TODO</h1>
+            <div class="form-group">
+                <input type="text" id="todoTitle" class="form-control" placeholder="Título de la nota">
+                <textarea id="todoText" class="form-control" placeholder="Texto de la nota"></textarea>
+                <button id="addTodoButton" class="btn btn-primary mt-2">Agregar TODO</button>
+                <button id="showIncompleteButton" class="btn btn-warning mt-2">Mostrar solo TODOS incompletos</button>
+                <button id="showAllButton" class="btn btn-dark mt-2">Mostrar todos los TODOS</button>
+            </div>
+            <div class="form-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar notas">
+            </div>
+            <div id="todoContainer"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
